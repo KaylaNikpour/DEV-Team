@@ -8,18 +8,18 @@ Team, timelines, tasks, and deliverables are managed with [Notion](https://www.n
 
 ## Team
 
-### EVT
+### EVT 🌎
 1. Bradley Wiebe (Winter)
 1. Michelle Mount
 1. William Ratudradra
 
-### IDD
+### IDD 💻
 1. Brody Richards
 1. Jashanjeet Singh (Jerry)
 1. Kayla Nikpour
 1. Sueun Choi (Chloe)
 
-### SAIT
+### SAIT 👨🏻‍🏫
 1. Stephen Peasley
 
 ## Tech Stack
