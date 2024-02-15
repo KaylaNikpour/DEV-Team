@@ -1,2 +1,33 @@
 
+
  
+ header {
+     grid-area: header;
+   }
+   .Tagline {
+     grid-area: tagline
+   }
+   .About {
+     grid-area: main;
+   }
+   .Current-events {
+     grid-area: aside;
+   }
+   .Event {
+     grid-area: event;
+   }
+   footer {
+     grid-area: footer;
+   }
+   
+   .container {
+     display: grid;
+     grid-template-columns: 50px 50px 50px 50px;
+     grid-template-rows: auto;
+     grid-template-areas: 
+       "header header header header"
+       "tagline tagline tagline aside"
+       "main main main aside"
+       "event event main aside"
+       "footer footer footer footer";
+   }
