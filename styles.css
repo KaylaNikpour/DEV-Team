@@ -11,7 +11,7 @@
    .Current-events {
      grid-area: aside;
    }
-   .Event {
+   .Donations {
      grid-area: event;
    }
    footer {
@@ -70,6 +70,25 @@ section.About {
         flex: 1; /* Allow the paragraph to take remaining space */
     }
 
+    /*Donate Section */
+    section.Donations {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2%;
+    }
+    .Event {
+        justify-content: flex-end;
+    }
+    .Clothes-line {
+        flex: 0 0 auto; /* Make the image container not flexible */
+        margin: 5px; /* Adjust margin as needed */
+        max-width: 100%; /* Ensures the image does not exceed the width of its container */
+        height: auto;
+        justify-content: flex-start;
+    }
+    
+
+    /*
 /* Upcoming Events aside */
    .Current-events {
     display: flex;
