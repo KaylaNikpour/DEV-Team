@@ -1,6 +1,4 @@
 
-
- 
  header {
      grid-area: header;
    }
@@ -26,9 +24,9 @@
      grid-template-rows: auto;
      grid-template-areas: 
        "header header header header"
-       "tagline tagline tagline aside"
-       "main main . aside"
-       "event event . aside"
+       "tagline tagline tagline tagline"
+       "main main main aside"
+       "event event event event"
        "footer footer footer footer";
    }
    li.nav {
@@ -37,24 +35,34 @@
 ul.Nav-Bar {
     display:flex;
     list-style-type: none;
-    margin: 0;
+    margin-bottom: 5%;
     padding: 15px;
     overflow: hidden;
     background-color: darkseagreen;
     justify-content: space-around;
-   font-family: Arial, Helvetica, sans-serif;
-   
-
-    
+   font-family: Arial, Helvetica, sans-serif;    
 }
-
+/* Tagline */
+div.Tagline {
+    display: flex;
+    justify-content: center;
+}
+section.About {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#home-plant {
+    display:flex;
+    flex-wrap: wrap;
+}
 /* Upcoming Events aside */
    .Current-events {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    justify-content: space-around;
     border: solid;
     border-color: black;
-
+    padding: 4%
    }
