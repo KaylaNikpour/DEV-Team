@@ -26,8 +26,11 @@
        "header header header header"
        "tagline tagline tagline tagline"
        "main main main aside"
-       "event event event event"
+       "event event event aside"
        "footer footer footer footer";
+   }
+   .container {
+    background-color: #F5FCF7;
    }
    li.nav {
     display:inline;
@@ -46,17 +49,27 @@ ul.Nav-Bar {
 div.Tagline {
     display: flex;
     justify-content: center;
+    margin-bottom: 3%;
 }
+
+/* about section */
 section.About {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 2%;
 }
-#home-plant {
-    display:flex;
-    flex-wrap: wrap;
-}
+/* plant image */
+.Home-plant {
+        flex: 0 0 auto; /* Make the image container not flexible */
+        margin: 5px; /* Adjust margin as needed */
+        max-width: 100%; /* Ensures the image does not exceed the width of its container */
+        height: auto;
+    }
+    
+    .about-paragraph {
+        flex: 1; /* Allow the paragraph to take remaining space */
+    }
+
 /* Upcoming Events aside */
    .Current-events {
     display: flex;
