@@ -22,12 +22,39 @@
    
    .container {
      display: grid;
-     grid-template-columns: 50px 50px 50px 50px;
+     
      grid-template-rows: auto;
      grid-template-areas: 
        "header header header header"
        "tagline tagline tagline aside"
-       "main main main aside"
-       "event event main aside"
+       "main main . aside"
+       "event event . aside"
        "footer footer footer footer";
+   }
+   li.nav {
+    display:inline;
+   }
+ul.Nav-Bar {
+    display:flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    overflow: hidden;
+    background-color: darkseagreen;
+    justify-content: space-around;
+   font-family: Arial, Helvetica, sans-serif;
+   
+
+    
+}
+
+/* Upcoming Events aside */
+   .Current-events {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-around;
+    border: solid;
+    border-color: black;
+
    }
