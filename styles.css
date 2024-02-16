@@ -2,16 +2,16 @@
  header {
      grid-area: header;
    }
-   .Tagline {
+   .tagline {
      grid-area: tagline
    }
-   .About {
+   .about {
      grid-area: main;
    }
-   .Current-events {
+   .current-events {
      grid-area: aside;
    }
-   .Donations {
+   .donations {
      grid-area: event;
    }
    footer {
@@ -35,25 +35,25 @@
    li.nav {
     display:inline;
    }
-ul.Nav-Bar {
+ul.nav-bar {
     display:flex;
     list-style-type: none;
     margin-bottom: 5%;
     padding: 15px;
     overflow: hidden;
-    background-color: darkseagreen;
+    background-color: #A2D5BC;
     justify-content: space-around;
    font-family: Arial, Helvetica, sans-serif;    
 }
 /* Tagline */
-div.Tagline {
+div.tagline {
     display: flex;
     justify-content: center;
     margin-bottom: 3%;
 }
 
 /* about section */
-section.About {
+section.about {
     display: flex;
     flex-wrap: wrap;
     margin: 2%;
@@ -71,15 +71,15 @@ section.About {
     }
 
     /*Donate Section */
-    section.Donations {
+    section.donations {
         display: flex;
         flex-wrap: wrap;
         margin: 2%;
     }
-    .Event {
+    .event {
         justify-content: flex-end;
     }
-    .Clothes-line {
+    .clothes-line {
         flex: 0 0 auto; /* Make the image container not flexible */
         margin: 5px; /* Adjust margin as needed */
         max-width: 100%; /* Ensures the image does not exceed the width of its container */
@@ -90,7 +90,7 @@ section.About {
 
     /*
 /* Upcoming Events aside */
-   .Current-events {
+   .current-events {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
@@ -98,3 +98,28 @@ section.About {
     border-color: black;
     padding: 4%
    }
+
+   /* Footer */
+   footer {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid;
+    border-color: black;
+    margin-top: 10px;
+    padding-left: 10px;
+    background-color: #A2D5BC;
+  
+   }
+
+   #copyright {
+    justify-content: flex-start;
+   }
+  .contact-us {
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+   .content-links {
+    text-align: end;
+   }
+
