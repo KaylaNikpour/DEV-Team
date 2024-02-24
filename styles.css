@@ -56,8 +56,14 @@ ul.nav-bar {
     display:flex;
     list-style-type: none;
     overflow: hidden;
+<<<<<<< Updated upstream
     justify-content: center;
    font-family: Arial, Helvetica, sans-serif;    
+=======
+    background-color: #A2D5BC;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;    
+>>>>>>> Stashed changes
 }
 
 /* Tagline */
