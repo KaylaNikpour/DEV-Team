@@ -1,34 +1,36 @@
 
- header {
-     grid-area: header;
-   }
-   .tagline {
-     grid-area: tagline
-   }
-   .about {
-     grid-area: main;
-   }
-   .current-events {
-     grid-area: aside;
-   }
-   .donations {
-     grid-area: event;
-   }
-   footer {
-     grid-area: footer;
-   }
-   
-   .container {
-     display: grid;
-     
-     grid-template-rows: auto;
-     grid-template-areas: 
-       "header header header header"
-       "tagline tagline tagline tagline"
-       "main main main aside"
-       "event event event aside"
-       "footer footer footer footer";
-   }
+  /* Desktop view */
+    header {
+        grid-area: header;
+      }
+      .tagline {
+        grid-area: tagline
+      }
+      .about {
+        grid-area: main;
+      }
+      .current-events {
+        grid-area: aside;
+      }
+      .donations {
+        grid-area: event;
+      }
+      footer {
+        grid-area: footer;
+      }
+      
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+          "header header header header"
+          "tagline tagline tagline tagline"
+          "main main main aside"
+          "event event event aside"
+          "footer footer footer footer";
+      }
+
    .container {
     background-color: #F5FCF7;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -42,22 +44,15 @@
 
    /*logo */
 
-   .logo-container {
-    width: 100px; /* Adjust according to your logo's dimensions */
-    height: auto; /* Allows the logo to scale proportionally */
-  }
-  
-  .logo-container img {
+  .top-logo-container img {
     display: flex;
     float: left;
-    width: 100%; /* Ensures the logo fills its container */
-    height: auto; /* Allows the logo to scale proportionally */
-    ; /* Ensures no extra space under the image */
+    width: 100px; 
+    height: auto;
+    margin: 10px;
+     
   }
-  .logo-container {
-    float: left; /* Float the logo container to the left */
-    margin: 10px; /* Adjust margin to create space between logo and h1 */
-  }
+ 
    h1 {
     display: flex;
     justify-content: center;
@@ -75,6 +70,7 @@
    }
 ul.nav-bar {
     display:flex;
+    flex-wrap: wrap;
     list-style-type: none;
     overflow: hidden;
     justify-content: center;
@@ -162,8 +158,15 @@ section.about {
     /* other colour choice 
     background-color: #A2D5BC;
     */
-  
    }
+   .bottom-logo-container img {
+    display: flex;
+    float: right;
+    width: 100px; 
+    height: auto;
+    margin-left: 80px;
+    padding: 3px;
+  }
 
    #copyright {
     justify-content: flex-start;
@@ -177,3 +180,19 @@ section.about {
     text-align: end;
    }
 
+   @media (width <=768px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "header"
+      "tagline"
+      "main"
+      "event"
+      "aside"
+      "footer"
+    }
+  li.nav {
+    display: none;
+  }
+  .nav a
+}
