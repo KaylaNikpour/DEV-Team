@@ -149,9 +149,14 @@ section.about {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+    font-family: shippori antique;
+    font-size:10px;
+    justify-content: center;
+    font-weight: bold;
     border: solid;
     border-color: black;
-    padding: 4%
+    padding: 0;
+    
    }
 
    /* Footer */
