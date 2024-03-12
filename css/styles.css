@@ -42,6 +42,15 @@ header {
 nav a i.material-symbols-outlined {
   display: none;
 }
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  padding-bottom: 10px;
+  color: #D8F3DC;
+  font-family: capriola, shippori antique, capriola;
+}
+
 /*logo */
 
 .top-logo-container img {
@@ -51,15 +60,6 @@ nav a i.material-symbols-outlined {
   height: auto;
   margin: 10px;
   }
-
-h1 {
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  padding-bottom: 10px;
-  color: #D8F3DC;
-  font-family: capriola, shippori antique, capriola;
-}
 
 /* nav bar */
 #myLinks li.nav {
@@ -189,7 +189,6 @@ footer {
   text-align: end;
 }
 
-/* mobile */
 @media (width <=1050px) {
   li.nav {
     margin-left:20px;
@@ -198,9 +197,11 @@ footer {
   }
   #issue-id, #where-id {
     min-width: none;
-    margin: 0%;
+    margin:0;
   }
 }
+
+/* Tablet */
 @media (width <=768px) {
     .container {
       grid-template-columns: 1fr;
@@ -211,21 +212,21 @@ footer {
       "event"
       "aside"
       "footer"
-    }
+  }
     header {
       height: 110px;
-    }
+  }
   
     #myLinks {
       display: none;
-    }
+  }
     .top-logo-container img {
      width: 70px;
      position: absolute;
      top: 18px;
-    }   
+  }   
   
-  nav a i.material-symbols-outlined {
+   nav a i.material-symbols-outlined {
     display: flex;
     position: absolute;
     top: 30px;
@@ -241,8 +242,8 @@ footer {
     position: relative;
   }
   #where-id {
- min-width:0px;
- margin:30px;
+    min-width:0px;
+    margin:30px;
   }
   #issue-id {
     min-width:0px;
