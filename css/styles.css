@@ -155,10 +155,13 @@ section.donations {
 .current-events {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style-type: none;
+  font-family: shippori antique;
+  font-size: 10px;
   border: solid;
   border-color: black;
-  padding: 4%;
+  padding: 3%;
 }
 
 /* Footer */
