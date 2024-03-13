@@ -69,7 +69,7 @@ h1 {
   margin-right: 30px;
   font-size: 25px;
   font-weight: bold;
-  font-family: commissioner, shippori antique, capriola;  
+  font-family: shippori antique, commissioner, capriola;  
 }
 #where-id {
   min-width:160px;
@@ -171,6 +171,7 @@ footer {
   justify-content: space-between;
   border: solid;
   border-color: black;
+  font-family: shippori antique;
   margin-top: 10px;
   padding-left: 10px;
   background-color: #2D6A4F;
@@ -185,15 +186,17 @@ footer {
 }
 
 #copyright {
-  float: left;
+  display:flex;
+  align-items: flex-end;
 }
-
+/*
 .content-links {
   text-align: end;
 }
+*/
 
 @media (width <=1050px) {
-  li.nav {
+  #myLinks li.nav {
     margin-left:20px;
     margin-right:20px;
     font-size: 23px;
@@ -203,7 +206,13 @@ footer {
     margin:0;
   }
 }
-
+@media (width <=878px) {
+  #myLinks li.nav {
+    margin-left:20px;
+    margin-right:20px;
+    font-size: 20px;
+  }
+}
 /* Tablet */
 @media (width <=768px) {
     .container {
@@ -254,7 +263,6 @@ footer {
 
 /* Add a grey background color on mouse-over */
 nav a i.material-symbols-outlined:hover {
-
   color: black;
 }
 
@@ -271,13 +279,18 @@ nav a i.material-symbols-outlined:hover {
     display: flex;
     flex-wrap: wrap;
   }
+  .current-events {
+    height: 70px;
+  }
 
   .home-plant {
     max-width: none;
   }
-
   .bottom-logo-container img {
-    display: none;
+    width: 70px;
+    position: relative;
+    right: 20px;
+    top: 15px;
   }
-}
+  }
 
