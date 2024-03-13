@@ -1,3 +1,5 @@
+/*desktop view */
+
 .tagline {
   grid-area: tagline
 }
@@ -37,39 +39,44 @@ header {
   background-color: #2D6A4F;
   grid-area: header;
 }
-
-span.material-symbols-outlined {
+nav a i.material-symbols-outlined {
   display: none;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  padding-bottom: 10px;
+  color: #D8F3DC;
+  font-family: capriola, shippori antique, commissioner;
 }
 
 /*logo */
 
 .top-logo-container img {
   display: flex;
-  float: left;
-  width: 100px; 
+  position: absolute;
+  width: 90px; 
   height: auto;
   margin: 10px;
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  padding-bottom: 15px;
-  color: #D8F3DC;
-  font-family: capriola;
-}
+  }
 
 /* nav bar */
-li.nav {
+#myLinks li.nav {
   display:inline;
-  justify-content: center;
+  justify-content: space-around;
   margin-left: 30px;
-  margin-right:30px;
-  font-size: 23px;
+  margin-right: 30px;
+  font-size: 25px;
   font-weight: bold;
-  font-family: commissioner, shippori antique, capriola;  
+  font-family: shippori antique, commissioner, capriola;  
+}
+#where-id {
+  min-width:160px;
+  margin:0%
+}
+#issue-id {
+  min-width:120px;
 }
 
 ul.nav-bar {
@@ -148,10 +155,13 @@ section.donations {
 .current-events {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style-type: none;
+  font-family: shippori antique, commissioner, capriola;
+  font-size: 10px;
   border: solid;
   border-color: black;
-  padding: 4%;
+  padding: 3%;
 }
 
 /* Footer */
@@ -161,6 +171,7 @@ footer {
   justify-content: space-between;
   border: solid;
   border-color: black;
+  font-family: shippori antique, commissioner, capriola;
   margin-top: 10px;
   padding-left: 10px;
   background-color: #2D6A4F;
@@ -175,39 +186,91 @@ footer {
 }
 
 #copyright {
-  float: left;
+  display:flex;
+  align-items: flex-end;
 }
-
+/*
 .content-links {
   text-align: end;
 }
+*/
 
-/* mobile */
-@media (width <= 768px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "header"
-    "tagline"
-    "main"
-    "event"
-    "aside"
-    "footer"
+@media (width <=1050px) {
+  #myLinks li.nav {
+    margin-left:20px;
+    margin-right:20px;
+    font-size: 23px;
   }
-
-  li.nav {
-    display: none;
+  #issue-id, #where-id {
+    min-width: none;
+    margin:0;
   }
-
-  span.material-symbols-outlined {
+}
+@media (width <=878px) {
+  #myLinks li.nav {
+    margin-left:20px;
+    margin-right:20px;
+    font-size: 20px;
+  }
+}
+/* Tablet */
+@media (width <=768px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "header"
+      "tagline"
+      "main"
+      "event"
+      "aside"
+      "footer"
+  }
+    header {
+      height: 110px;
+  }
+  
+    #myLinks {
+      display: none;
+  }
+    .top-logo-container img {
+     width: 70px;
+     position: absolute;
+     top: 18px;
+  }   
+  
+   nav a i.material-symbols-outlined {
     display: flex;
-    justify-content: space-around;
-    float: right;
+    position: absolute;
+    top: 30px;
+    right:0px;
     font-weight: 1000;
     font-size: 50px;
-    margin: 10px;
+    margin: 15px;
+    color: white;
+  }
+  .nav-bar{
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  #where-id {
+    min-width:0px;
+    margin:30px;
+  }
+  #issue-id {
+    min-width:0px;
   }
 
+/* Add a grey background color on mouse-over */
+nav a i.material-symbols-outlined:hover {
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
   h1 {
     padding-bottom: 0;
   }
@@ -216,12 +279,18 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
+  .current-events {
+    height: 70px;
+  }
 
   .home-plant {
     max-width: none;
   }
-
   .bottom-logo-container img {
-    display: none;
+    width: 70px;
+    position: relative;
+    right: 20px;
+    top: 15px;
   }
-}   
+  }
+
