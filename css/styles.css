@@ -4,6 +4,9 @@
   grid-area: tagline
 }
 
+.mission {
+  grid-area: pre-main
+}
 .about {
   grid-area: main;
 }
@@ -28,8 +31,9 @@ footer {
   grid-template-areas: 
     "header header header header"
     "tagline tagline tagline tagline"
+    "pre-main pre-main pre-main aside"
     "main main main aside"
-    "event event event aside"
+    "event event event event"
     "footer footer footer footer";
 }
 
@@ -86,14 +90,14 @@ ul.nav-bar {
   justify-content: center;
 }
 
-li a {
+.nav-bar li a {
   display: block;
   color: #B7E4C7;
   text-align: center; 
   text-decoration:none;
 }
 
-li a:hover {
+.nav-bar li a:hover {
   background-color: #1B4332;
   padding: 8px;
   border-radius: 20px;
@@ -112,7 +116,7 @@ div.tagline {
 
 /* about section */
 
-section.about {
+section.about, section.mission{
   display: flex;
   flex-wrap: wrap;
   margin: 2%;
@@ -122,15 +126,32 @@ section.about {
 /* plant image */
 .home-plant {
   flex: 0 0 auto; /* Make the image container not flexible */
-  margin: 5px; /* Adjust margin as needed */
+  margin: 10px; /* Adjust margin as needed */
+  padding: 30px;
   max-width: 100%; /* Ensures the image does not exceed the width of its container */
   height: auto;
 }
 
-.about-paragraph {
+.about-paragraph, .mission-statement, .event {
   flex: 1; /* Allow the paragraph to take remaining space */
 }
-
+.about-paragraph p {
+  font-size: 18px
+}
+.mission-statement {
+  border: solid #1B4332;
+  box-shadow: 4px 3px 20px 10px #1B4332;
+  padding: 10px;
+  border-radius: 20px;
+}
+.mission-statement p {
+  font-size: 20px;
+  text-wrap:balance;
+}
+.mission-statement h3 {
+  text-align: center;
+  font-size: 25px;
+}
 /*Donate Section */
 section.donations {
   display: flex;
@@ -189,11 +210,11 @@ footer {
   display:flex;
   align-items: flex-end;
 }
-/*
-.content-links {
-  text-align: end;
+.contact-us li {
+  display: flex;
+  justify-content: flex-start;
+
 }
-*/
 
 @media (width <=1050px) {
   #myLinks li.nav {
@@ -220,6 +241,7 @@ footer {
       grid-template-areas:
       "header"
       "tagline"
+      "pre-main"
       "main"
       "event"
       "aside"
@@ -278,6 +300,9 @@ nav a i.material-symbols-outlined:hover {
   .about, .tagline, .donations {
     display: flex;
     flex-wrap: wrap;
+  }
+  .home-plant img {
+    height:250px ;
   }
   .current-events {
     height: 70px;
