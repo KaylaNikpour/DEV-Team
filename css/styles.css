@@ -1,0 +1,380 @@
+/*desktop view */
+
+.tagline {
+  grid-area: tagline
+}
+
+.mission {
+  grid-area: pre-main
+}
+.about {
+  grid-area: main;
+}
+
+.current-events {
+  grid-area: aside;
+}
+
+.donations {
+  grid-area: event;
+}
+
+footer {
+  grid-area: footer;
+}
+  
+.container {
+  background-color: #F5FCF7;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header"
+    "tagline tagline tagline tagline"
+    "pre-main pre-main pre-main aside"
+    "main main main aside"
+    "event event event event"
+    "footer footer footer footer";
+}
+
+/* header */
+
+header {
+  background-color: #2D6A4F;
+  grid-area: header;
+}
+nav a i.material-symbols-outlined {
+  display: none;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  padding-bottom: 10px;
+  color: #D8F3DC;
+  font-family: capriola, shippori antique, commissioner;
+}
+
+/*logo */
+
+.top-logo-container img {
+  display: flex;
+  position: absolute;
+  width: 90px; 
+  height: auto;
+  margin: 10px;
+  }
+
+/* nav bar */
+#myLinks li.nav {
+  display:inline;
+  justify-content: space-around;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: shippori antique, commissioner, capriola;  
+}
+#where-id {
+  min-width:160px;
+  margin:0%
+}
+#issue-id {
+  min-width:120px;
+}
+
+ul.nav-bar {
+  display:flex;
+  list-style-type: none;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.nav-bar li a {
+  display: block;
+  color: #B7E4C7;
+  text-align: center; 
+  text-decoration:none;
+}
+
+.nav-bar li a:hover {
+  background-color: #1B4332;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+/* Tagline */
+
+div.tagline {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #95D5B2;
+  font-family: capriola, shippori antique, commissioner;
+}
+
+/* about section */
+
+section.about, section.mission{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2%;
+  font-family: shippori antique, commissioner, capriola;
+}
+
+/* plant image */
+.home-plant {
+  flex: 0 0 auto; /* Make the image container not flexible */
+  margin: 10px; /* Adjust margin as needed */
+  padding: 30px;
+  max-width: 100%; /* Ensures the image does not exceed the width of its container */
+  height: auto;
+}
+
+.about-paragraph, .mission-statement, .event {
+  flex: 1; /* Allow the paragraph to take remaining space */
+}
+.about-paragraph p {
+  font-size: 18px
+}
+.mission-statement {
+  border: solid #1B4332;
+  box-shadow: -3px 3px 24px 9px #1B4332;
+  padding-left: 20px;
+  border-radius: 20px;
+}
+.mission-statement p {
+  font-size: 20px;
+  text-wrap:balance;
+}
+.mission-statement h3, .mission-statement p {
+  text-align: center;
+}
+.mission-statement h3 {
+  font-size: 25px;
+}
+.about h3, .event h3 {
+  font-size: 25px;
+}
+.about h4 {
+  font-size: 20px;
+  text-decoration: underline;
+}
+/*Donate Section */
+section.donations {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2%;
+  font-family: shippori antique, commissioner, capriola;
+}
+.donations img {
+  float: right;
+}
+figcaption {
+  display: none;
+}
+.event {
+  justify-content: flex-end;
+}
+
+.clothes-line {
+  flex: 0 0 auto; /* Make the image container not flexible */
+  margin: 5px; /* Adjust margin as needed */
+  max-width: 100%; /* Ensures the image does not exceed the width of its container */
+  height: auto;
+  justify-content: flex-start;
+  
+}
+
+/* Upcoming Events aside */
+.current-events {                      
+  font-family: shippori antique, commissioner, capriola;
+  font-size: 15px;
+  border: solid;
+  border-color: black;
+  margin: 20px;
+  border-radius: 20px;
+}
+.current-events h3 {
+  text-align: center;
+}
+.event-list li {
+  list-style-type: none;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: solid;
+  border-color: black;
+  font-family: shippori antique, commissioner, capriola;
+  margin-top: 10px;
+  padding-left: 10px;
+  background-color: #2D6A4F;
+  color: #B7E4C7; /* other colour choice background-color: #A2D5BC; */
+  border-radius: 20px;
+}
+
+.bottom-logo-container img {
+  display: flex;
+  float: right;
+  width: 100px; 
+  padding: 3px;
+}
+
+#copyright {
+  position: absolute;
+  width: 100%;
+  line-height: 10px;
+  text-align: center;
+  bottom:0;
+}
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+@media (width <=1050px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "tagline"
+    "pre-main"
+    "main"
+    "event"
+    "aside"
+    "footer"
+}
+  #myLinks li.nav {
+    margin-left:20px;
+    margin-right:20px;
+    font-size: 23px;
+  }
+  #issue-id, #where-id {
+    min-width: none;
+    margin:0;
+  }
+}
+@media (width <=1000px){
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .about h3, .about h4, .donations h3 {
+    text-align: center;
+  }
+  .about h3, .donations h3 {
+    font-size: 25px;
+    padding-top: 30px;
+  }
+  .about h4 {
+    font-size: 20px;
+    text-decoration: underline;
+    padding-top: 15px
+
+  }
+
+}
+@media (width <=878px) {
+  #myLinks li.nav {
+    margin-left:20px;
+    margin-right:20px;
+    font-size: 20px;
+  }
+}
+
+
+/* Tablet */
+@media (width <=768px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "header"
+      "tagline"
+      "pre-main"
+      "main"
+      "event"
+      "aside"
+      "footer"
+  }
+    header {
+      height: 110px;
+  }
+  
+    #myLinks {
+      display: none;
+  }
+    .top-logo-container img {
+     width: 70px;
+     position: absolute;
+     top: 18px;
+  }   
+  
+   nav a i.material-symbols-outlined {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right:0px;
+    font-weight: 1000;
+    font-size: 50px;
+    margin: 15px;
+    color: white;
+  }
+  .nav-bar{
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  #where-id {
+    min-width:0px;
+    margin:30px;
+  }
+  #issue-id {
+    min-width:0px;
+  }
+
+/* Add a grey background color on mouse-over */
+nav a i.material-symbols-outlined:hover {
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+  h1 {
+    padding-bottom: 0;
+  }
+
+  .about, .tagline, .donations {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tagline {
+    font-size: 10px
+  }
+ 
+  .home-plant img {
+    height:250px;
+  }
+
+  .current-events {
+    height: 70px;
+  }
+
+  .bottom-logo-container img {
+    width: 70px;
+    position: relative;
+    right: 20px;
+    top: 15px;
+  }
+  }
+
