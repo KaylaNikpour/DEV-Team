@@ -1,0 +1,20 @@
+.Main_Wheretogo h1 {
+    color: #1B4332;
+}
+.Main_Wheretogo p {
+    font-family: capriola, shippori antique, commissioner;
+    font-size: 16px;
+}
+
+.Main_Wheretogo {
+    display: block;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10%;
+}
+
+.Charity_thrift_stores {
+
+}
