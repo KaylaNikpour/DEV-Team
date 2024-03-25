@@ -8,6 +8,14 @@ class Nav extends HTMLElement {
     const currentPage = this.getAttribute('current-page');
     this.shadowRoot.innerHTML = `
       <style>
+        nav {
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          background: #2d6a4f;
+          padding-bottom: 0.015rem;
+          position: relative;
+        }
+
         nav ul {
           display: flex;
           list-style-type: none;
@@ -48,7 +56,7 @@ class Nav extends HTMLElement {
             'wght' 400,
             'GRAD' 0,
             'opsz' 24;
-          font-size: 24px;
+          font-size: 45px;
           font-style: normal;
           color: #d8f3dc;
         }
@@ -63,8 +71,8 @@ class Nav extends HTMLElement {
           .hamburger {
             display: block;
             position: absolute;
-            right: 1.5rem;
-            top: 1rem;
+            right: 1.25rem;
+            top: -6rem;
           }
         }
       </style>
