@@ -81,12 +81,12 @@ class Nav extends HTMLElement {
           <i class="material-symbols-outlined">menu</i>
         </div>
         <ul>
-          <li><a href="index.html" class="${currentPage === 'home' ? 'current' : ''}">Home</a></li>
-          <li><a href="./issue/" class="${currentPage === 'issue' ? 'current' : ''}">The Issue</a></li>
-          <li><a href="./where-to-go/" class="${currentPage === 'where' ? 'current' : ''}">Where To Go</a></li>
-          <li><a href="./upcycling/" class="${currentPage === 'upcycling' ? 'current' : ''}">Upcycling</a></li>
-          <li><a href="./team/" class="${currentPage === 'team' ? 'current' : ''}">Team</a></li>
-          <li><a href="./faq/" class="${currentPage === 'faq' ? 'current' : ''}">FAQ</a></li>
+          <li><a href="/" class="${currentPage === 'home' ? 'current' : ''}">Home</a></li>
+          <li><a href="/issue/" class="${currentPage === 'issue' ? 'current' : ''}">The Issue</a></li>
+          <li><a href="/where-to-go/" class="${currentPage === 'where' ? 'current' : ''}">Where To Go</a></li>
+          <li><a href="/upcycling/" class="${currentPage === 'upcycling' ? 'current' : ''}">Upcycling</a></li>
+          <li><a href="/team/" class="${currentPage === 'team' ? 'current' : ''}">Team</a></li>
+          <li><a href="/faq/" class="${currentPage === 'faq' ? 'current' : ''}">FAQ</a></li>
         </ul>
       </nav>
     `;
