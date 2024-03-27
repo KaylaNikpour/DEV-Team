@@ -43,9 +43,7 @@ header {
   background-color: #2D6A4F;
   grid-area: header;
 }
-nav a i.material-symbols-outlined {
-  display: none;
-}
+
 h1 {
   display: flex;
   justify-content: center;
@@ -81,26 +79,6 @@ h1 {
 }
 #issue-id {
   min-width:120px;
-}
-
-ul.nav-bar {
-  display:flex;
-  list-style-type: none;
-  overflow: hidden;
-  justify-content: center;
-}
-
-.nav-bar li a {
-  display: block;
-  color: #B7E4C7;
-  text-align: center; 
-  text-decoration:none;
-}
-
-.nav-bar li a:hover {
-  background-color: #1B4332;
-  padding: 8px;
-  border-radius: 20px;
 }
 
 /* Tagline */
