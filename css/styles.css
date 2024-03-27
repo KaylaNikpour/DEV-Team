@@ -1,3 +1,4 @@
+
 /*desktop view */
 
 .tagline {
@@ -58,9 +59,10 @@ h1 {
 .top-logo-container img {
   display: flex;
   position: absolute;
-  width: 90px; 
+  width: 120px; 
   height: auto;
   margin: 10px;
+  filter:hue-rotate(10deg) drop-shadow(1px 6px 20px red) invert(75%);
   }
 
 /* nav bar */
@@ -94,7 +96,9 @@ div.tagline {
 
 /* about section */
 
-section.about, section.mission{
+body#homepage {
+  
+section.about, section.mission {
   display: flex;
   flex-wrap: wrap;
   margin: 2%;
@@ -180,7 +184,7 @@ figcaption {
 .event-list li {
   list-style-type: none;
 }
-
+}
 /* Footer */
 footer {
   display: flex;
@@ -202,6 +206,7 @@ footer {
   float: right;
   width: 100px; 
   padding: 3px;
+  filter:hue-rotate(10deg) drop-shadow(1px 6px 20px red) invert(75%);
 }
 
 #copyright {
