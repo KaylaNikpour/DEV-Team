@@ -1,3 +1,4 @@
+
 /*desktop view */
 
 .tagline {
@@ -43,9 +44,7 @@ header {
   background-color: #2D6A4F;
   grid-area: header;
 }
-nav a i.material-symbols-outlined {
-  display: none;
-}
+
 h1 {
   display: flex;
   justify-content: center;
@@ -60,9 +59,10 @@ h1 {
 .top-logo-container img {
   display: flex;
   position: absolute;
-  width: 90px; 
+  width: 120px; 
   height: auto;
   margin: 10px;
+  filter:hue-rotate(10deg) drop-shadow(1px 6px 20px red) invert(75%);
   }
 
 /* nav bar */
@@ -83,26 +83,6 @@ h1 {
   min-width:120px;
 }
 
-ul.nav-bar {
-  display:flex;
-  list-style-type: none;
-  overflow: hidden;
-  justify-content: center;
-}
-
-.nav-bar li a {
-  display: block;
-  color: #B7E4C7;
-  text-align: center; 
-  text-decoration:none;
-}
-
-.nav-bar li a:hover {
-  background-color: #1B4332;
-  padding: 8px;
-  border-radius: 20px;
-}
-
 /* Tagline */
 
 div.tagline {
@@ -116,7 +96,9 @@ div.tagline {
 
 /* about section */
 
-section.about, section.mission{
+body#homepage {
+  
+section.about, section.mission {
   display: flex;
   flex-wrap: wrap;
   margin: 2%;
@@ -202,7 +184,7 @@ figcaption {
 .event-list li {
   list-style-type: none;
 }
-
+}
 /* Footer */
 footer {
   display: flex;
@@ -224,6 +206,7 @@ footer {
   float: right;
   width: 100px; 
   padding: 3px;
+  filter:hue-rotate(10deg) drop-shadow(1px 6px 20px red) invert(75%);
 }
 
 #copyright {
