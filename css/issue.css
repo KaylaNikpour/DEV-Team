@@ -39,17 +39,49 @@
   }
 
   .fast-fashion {
+    margin-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
+    border: solid;
   }
   h3 {
     font-family: "shippori antique", commissioner, capriola;
     font-size: 25px;
 }
+h4 {
+font-family: "shippori antique", commissioner, capriola;
+font-size: 18px;
+font-style: italic;
+}
+
 p {
     font-size: 20px;
     font-family: "shippori antique", commissioner, capriola;
+}
 
+.fast-fashion li, .waste li {
+  font-family: "shippori antique", commissioner, capriola;
+  font-style: italic;
+}
+.waste {
+  border:solid;
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.water {
+  border:solid;
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.other {
+  border:solid;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #accordion {
