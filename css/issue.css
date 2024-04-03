@@ -1,9 +1,5 @@
 
 
-.tagline {
-    grid-area: tagline
-  }
-  
   .fast-fashion {
     grid-area: main;
   }
@@ -18,6 +14,10 @@
   .other {
     grid-area: other;
   }
+
+  #accordion {
+    grid-area: accordion;
+  }
   
   footer {
     grid-area: footer;
@@ -30,11 +30,11 @@
     grid-template-rows: auto;
     grid-template-areas: 
       "header header header header"
-      "tagline tagline tagline tagline"
       "main main main main"
       "waste waste waste waste"
       "water water water water"
       "other other other other"
+      "accordion accordion accordion accordion"
       "footer footer footer footer";
   }
 
@@ -43,11 +43,56 @@
     padding-right: 15px;
   }
   h3 {
-    font-family: shippori antique, commissioner, capriola;
+    font-family: "shippori antique", commissioner, capriola;
     font-size: 25px;
 }
 p {
     font-size: 20px;
-    font-family: shippori antique, commissioner, capriola;
+    font-family: "shippori antique", commissioner, capriola;
 
 }
+
+#accordion {
+  margin-bottom: 30px;
+}
+.accordion-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    color: black;
+  }
+  .accordion-container .accordion {
+    background-color:  #95D5B2;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    border: solid;
+    text-align: left;
+    outline: none;
+    transition: 0.6s;
+    border-radius: 20px;
+  }
+  .panel {
+    padding:0 30px;
+    background-color: #D8F3DC;
+    max-height: 0;
+    overflow:hidden;
+    transition: max-height 0.4s ease-out;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-family: "shippori antique", commissioner, capriola;
+    font-size: 1rem;
+  }
+  .panel li {
+    margin-top: 10px;
+  }
+
+  button.accordion {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "shippori antique", commissioner, capriola;
+    font-weight: bold;
+  }
