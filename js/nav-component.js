@@ -25,10 +25,11 @@ class Nav extends HTMLElement {
 
         nav ul li a {
           border: 2px solid #1b4332;
-          border-radius: 20px;
+          border-radius: 30px;
           color: #b7e4c7;
           display: block;
           font-family: capriola, shippori antique, commissioner;
+          font-size:20px;
           margin: 5px;
           padding: 10px 15px;
           text-align: center;
@@ -85,9 +86,6 @@ class Nav extends HTMLElement {
           <li><a href="/issue/" class="${currentPage === 'issue' ? 'current' : ''}">The Issue</a></li>
           <li><a href="/where-to-go/" class="${currentPage === 'where' ? 'current' : ''}">Where To Go</a></li>
           <li><a href="/upcycling/" class="${currentPage === 'upcycling' ? 'current' : ''}">Upcycling</a></li>
-          <li><a href="/team/" class="${currentPage === 'team' ? 'current' : ''}">Team</a></li>
-          <li><a href="/faq/" class="${currentPage === 'faq' ? 'current' : ''}">FAQ</a></li>
-        </ul>
       </nav>
     `;
 
