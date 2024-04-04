@@ -1,15 +1,16 @@
 h1 {
     color: #1B4332;
+    font-size: 3em;
 }
 
 p {
     font-family: capriola, shippori antique, commissioner;
-    font-size: 16px;
+    font-size: 1.5em;
 }
 
 li {
     font-family: capriola, shippori antique, commissioner;
-    font-size: 16px;
+    font-size: 1.5em;
 }
 
 
@@ -19,6 +20,28 @@ li {
     grid-column-end: auto;
     text-align: center;
     margin: 0 auto;
+    padding: 10%;
+}
+
+.Charity_thrift_stores {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    text-align: center;
+}
+
+.Local_Markets {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    text-align: center;
+}
+
+.Local_Classified {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    text-align: center;
+}
+
+.other {
     padding: 10%;
 }
 
@@ -42,9 +65,14 @@ li {
     grid-area: classified;
 }
 
+.other {
+    grid-area: other;
+}
+
 .footer {
     grid-area: footer;
 }
+
 
 
 .container {
@@ -57,6 +85,46 @@ li {
     "tagline tagline tagline tagline"
     "main main main main"
     "charity local classified ."
+    "other other other other"
     "footer footer footer footer";
 }
 
+.Main_Wheretogo img {
+    width: 200px;
+    height: auto;
+}
+
+ul {
+    list-style-type: none; /* 리스트 마커 제거 */
+}
+
+ul li a {
+    text-decoration: none; /* 링크에 밑줄 제거 */
+    color: #1B4332; /* 링크의 기본 색상 설정 */
+    transition: color 0.3s; /* 색상 변화에 대한 전환 효과 추가 */
+    transition: background-color 0.3s, color 0.3s, padding 0.3s; /* 색상과 패딩에 대한 전환 효과 추가 */
+    padding: 10px 15px; /* 패딩 추가 */
+    border-radius: 20px; /* 둥근 모서리를 위해 border-radius 추가 */
+    display: inline-block;
+}
+
+ul li a:hover {
+    background-color: #2D6A4F; /* 마우스를 가져다 대면 색상 변경 */
+    color: white;
+}
+
+p a {
+    font-size: 1.5em;
+    text-decoration: none; /* 링크에 밑줄 제거 */
+    color: #1B4332; /* 링크의 기본 색상 설정 */
+    transition: color 0.3s; /* 색상 변화에 대한 전환 효과 추가 */
+    transition: background-color 0.3s, color 0.3s, padding 0.3s; /* 색상과 패딩에 대한 전환 효과 추가 */
+    padding: 10px 15px; /* 패딩 추가 */
+    border-radius: 20px; /* 둥근 모서리를 위해 border-radius 추가 */
+    display: inline-block;
+}
+
+p a:hover {
+background-color: #2D6A4F; /* 마우스를 가져다 대면 색상 변경 */
+    color: white;
+}
