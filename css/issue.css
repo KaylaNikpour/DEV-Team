@@ -1,10 +1,8 @@
 
 
-.tagline {
-    grid-area: tagline
-  }
+
   
-  .Main_Wheretogo {
+  .fast-fashion {
     grid-area: main;
   }
   
@@ -30,7 +28,7 @@
     grid-template-rows: auto;
     grid-template-areas: 
       "header header header header"
-      "tagline tagline tagline tagline"
+      
       "main main main main"
       "waste waste waste waste"
       "water water water water"
