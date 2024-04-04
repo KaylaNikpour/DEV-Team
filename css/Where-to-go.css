@@ -1,10 +1,17 @@
-.Main_Wheretogo h1 {
+h1 {
     color: #1B4332;
 }
-.Main_Wheretogo p {
+
+p {
     font-family: capriola, shippori antique, commissioner;
     font-size: 16px;
 }
+
+li {
+    font-family: capriola, shippori antique, commissioner;
+    font-size: 16px;
+}
+
 
 .Main_Wheretogo {
     display: block;
@@ -15,6 +22,41 @@
     padding: 10%;
 }
 
-.Charity_thrift_stores {
 
+.tagline {
+    grid-area: tagline;
 }
+
+.Main_Wheretogo {
+    grid-area: main;
+}
+
+.Charity_thrift_stores {
+    grid-area: charity;
+}
+.Local_Markets {
+    grid-area: local;
+}
+
+.Local_Classified {
+    grid-area: classified;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+.container {
+    background-color: #F5FCF7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header header"
+    "tagline tagline tagline tagline"
+    "main main main main"
+    "charity local classified ."
+    "footer footer footer footer";
+}
+
