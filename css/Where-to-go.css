@@ -1,10 +1,20 @@
-.Main_Wheretogo h1 {
+
+h3 {
     color: #1B4332;
-}
-.Main_Wheretogo p {
+    font-size: 3em;
     font-family: capriola, shippori antique, commissioner;
-    font-size: 16px;
 }
+
+p {
+    font-family: capriola, shippori antique, commissioner;
+    font-size: 1.5em;
+}
+
+li {
+    font-family: capriola, shippori antique, commissioner;
+    font-size: 1.5em;
+}
+
 
 .Main_Wheretogo {
     display: block;
@@ -16,5 +26,107 @@
 }
 
 .Charity_thrift_stores {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    text-align: center;
+}
 
+.Local_Markets {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    text-align: center;
+}
+
+.Local_Classified {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    text-align: center;
+}
+
+.other {
+    padding: 10%;
+}
+
+
+.tagline {
+    grid-area: tagline;
+}
+
+.Main_Wheretogo {
+    grid-area: main;
+}
+
+.Charity_thrift_stores {
+    grid-area: charity;
+}
+.Local_Markets {
+    grid-area: local;
+}
+
+.Local_Classified {
+    grid-area: classified;
+}
+
+.other {
+    grid-area: other;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+
+.container {
+    background-color: #F5FCF7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header header"
+    "tagline tagline tagline tagline"
+    "main main main main"
+    "charity local classified ."
+    "other other other other"
+    "footer footer footer footer";
+}
+
+.Main_Wheretogo img {
+    width: 200px;
+    height: auto;
+}
+
+ul {
+    list-style-type: none; /* 리스트 마커 제거 */
+}
+
+ul li a {
+    text-decoration: none; /* 링크에 밑줄 제거 */
+    color: #1B4332; /* 링크의 기본 색상 설정 */
+    transition: color 0.3s; /* 색상 변화에 대한 전환 효과 추가 */
+    transition: background-color 0.3s, color 0.3s, padding 0.3s; /* 색상과 패딩에 대한 전환 효과 추가 */
+    padding: 10px 15px; /* 패딩 추가 */
+    border-radius: 20px; /* 둥근 모서리를 위해 border-radius 추가 */
+    display: inline-block;
+}
+
+ul li a:hover {
+    background-color: #2D6A4F; /* 마우스를 가져다 대면 색상 변경 */
+    color: white;
+}
+
+p a {
+    font-size: 1.3em;
+    text-decoration: none; /* 링크에 밑줄 제거 */
+    color: #1B4332; /* 링크의 기본 색상 설정 */
+    transition: color 0.3s; /* 색상 변화에 대한 전환 효과 추가 */
+    transition: background-color 0.3s, color 0.3s, padding 0.3s; /* 색상과 패딩에 대한 전환 효과 추가 */
+    padding: 10px 15px; /* 패딩 추가 */
+    border-radius: 20px; /* 둥근 모서리를 위해 border-radius 추가 */
+    display: inline-block;
+}
+
+p a:hover {
+background-color: #2D6A4F; /* 마우스를 가져다 대면 색상 변경 */
+    color: white;
 }
