@@ -1,6 +1,8 @@
-h1 {
+
+h3 {
     color: #1B4332;
     font-size: 3em;
+    font-family: capriola, shippori antique, commissioner;
 }
 
 p {
@@ -114,7 +116,7 @@ ul li a:hover {
 }
 
 p a {
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-decoration: none; /* 링크에 밑줄 제거 */
     color: #1B4332; /* 링크의 기본 색상 설정 */
     transition: color 0.3s; /* 색상 변화에 대한 전환 효과 추가 */
