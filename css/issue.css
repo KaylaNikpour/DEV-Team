@@ -81,7 +81,7 @@ p {
 }
 
 /*ask!*/
-p span {
+span span {
   font-size: 1.0em;
   background-color: rgba(197, 245, 206, 0.846);
 }
