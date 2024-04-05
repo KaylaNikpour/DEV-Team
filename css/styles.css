@@ -33,7 +33,7 @@ footer {
     "header header header header"
     "tagline tagline tagline tagline"
     "pre-main pre-main pre-main aside"
-    "main main main aside"
+    "main main main main"
     "event event event event"
     "footer footer footer footer";
 }
@@ -124,6 +124,7 @@ section.about, section.mission {
   border: solid #1B4332;
   box-shadow: -3px 3px 24px 9px #1B4332;
   padding-left: 20px;
+  padding-right:20px;
   border-radius: 20px;
 }
 .mission-statement p {
