@@ -216,7 +216,9 @@ footer {
   line-height: 10px;
   text-align: center;
   bottom:0;
+  color: #2D6A4F;
 }
+
 .contact-us {
   display: flex;
   flex-direction: column;
