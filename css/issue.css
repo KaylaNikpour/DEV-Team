@@ -1,10 +1,8 @@
 
 
-.tagline {
-    grid-area: tagline
-  }
+
   
-  .Main_Wheretogo {
+  .fast-fashion {
     grid-area: main;
   }
   
@@ -15,6 +13,10 @@
     grid-area: waste
   }
   
+  .other {
+    grid-area: other;
+  }
+  
   footer {
     grid-area: footer;
   }
@@ -22,13 +24,15 @@
   .container {
     background-color: #F5FCF7;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
       "header header header header"
-      "tagline tagline tagline tagline"
-      "main main waste waste"
-      "main main water water"
+      
+      "main main main main"
+      "waste waste waste waste"
+      "water water water water"
+      "other other other other"
       "footer footer footer footer";
   }
 
