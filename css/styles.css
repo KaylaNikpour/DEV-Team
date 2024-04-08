@@ -77,7 +77,7 @@ h1 {
 }
 #where-id {
   min-width:160px;
-  margin:0%
+  margin:0%;
 }
 #issue-id {
   min-width:120px;
@@ -177,10 +177,6 @@ h4 {
 .evt-class {
   color: #2D6A4F;
 }
-figcaption {
-  display: none;
-}
-
 /* Upcoming Events aside */
 .current-events {                      
   font-family: shippori antique, commissioner, capriola;
@@ -252,16 +248,12 @@ footer {
     "main"
     "event"
     "aside"
-    "footer"
+    "footer";
 }
   #myLinks li.nav {
     margin-left:20px;
     margin-right:20px;
     font-size: 23px;
-  }
-  #issue-id, #where-id {
-    min-width: none;
-    margin:0;
   }
 }
 @media (width <=1000px){
@@ -279,15 +271,15 @@ footer {
   }
   .about h4 {
     font-size: 20px;
-
-    padding-top: 15px
+    padding-top: 15px;
 
   }
-
 }
+
 @media (width <=950px) {
  
 }
+
 @media (width <=878px) {
   #myLinks li.nav {
     margin-left:20px;
@@ -334,7 +326,6 @@ footer {
     min-width:0px;
   }
 
-/* Add a grey background color on mouse-over */
 nav a i.material-symbols-outlined:hover {
   color: black;
 }
@@ -353,7 +344,7 @@ nav a i.material-symbols-outlined:hover {
     flex-wrap: wrap;
   }
   .tagline {
-    font-size: 10px
+    font-size: 10px;
   }
  
   .current-events {
