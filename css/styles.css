@@ -45,25 +45,10 @@ header {
   background-color: #B7E4C7;;
   grid-area: header;
 }
-
-h1 {
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  padding-bottom: 10px;
-  color: black;
-  font-family: capriola, shippori antique, commissioner;
+header img {
+padding-left:45%;
+width: 200px;
 }
-
-/*logo */
-
-.top-logo-container img {
-  display: flex;
-  position: absolute;
-  width: 120px; 
-  height: auto;
-  margin: 10px;
-  }
 
 /* nav bar */
 #myLinks li.nav {
@@ -94,7 +79,7 @@ div.tagline {
   font-family: capriola, shippori antique, commissioner;
 }
 
-/* about section */
+/* about us */
 
 body#homepage {
   
@@ -135,7 +120,7 @@ section.about, section.mission {
   font-size: 50px;
 }
 .mission-statement p {
-  font-size: 25px;
+  font-size: 2vw;
   text-wrap: balance;
   font-weight: 600;
 }
@@ -177,7 +162,8 @@ h4 {
 .evt-class {
   color: #2D6A4F;
 }
-/* Upcoming Events aside */
+
+/* Contact us */
 .current-events {                      
   font-family: shippori antique, commissioner, capriola;
   font-size: 15px;
@@ -199,6 +185,7 @@ h4 {
   text-decoration: none;
 }
 }
+
 /* Footer */
 footer {
   display: flex;
@@ -215,14 +202,6 @@ footer {
   border-radius: 20px;
 }
 
-.bottom-logo-container img {
-  display: flex;
-  float: right;
-  width: 100px; 
-  padding: 3px;
-  filter:hue-rotate(10deg) drop-shadow(1px 6px 20px red) invert(75%);
-}
-
 #copyright {
   position: absolute;
   width: 100%;
@@ -230,12 +209,6 @@ footer {
   text-align: center;
   bottom:0;
   color: #2D6A4F;
-}
-
-.contact-us {
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
 }
 
 @media (width <=1050px) {
@@ -257,11 +230,7 @@ footer {
   }
 }
 @media (width <=1000px){
-  .about {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
+
   .about h3, .about h4, .donations h3 {
     text-align: center;
   }
@@ -276,9 +245,6 @@ footer {
   }
 }
 
-@media (width <=950px) {
- 
-}
 
 @media (width <=878px) {
   #myLinks li.nav {
@@ -289,10 +255,12 @@ footer {
 }
 
 
-/* Tablet */
 @media (width <=768px) {
     header {
       height: 110px;
+  }
+  header img {
+    width: 140px;
   }
     #myLinks {
       display: none;
@@ -318,14 +286,6 @@ footer {
     background-color: #333;
     position: relative;
   }
-  #where-id {
-    min-width:0px;
-    margin:30px;
-  }
-  #issue-id {
-    min-width:0px;
-  }
-
 nav a i.material-symbols-outlined:hover {
   color: black;
 }
@@ -345,17 +305,6 @@ nav a i.material-symbols-outlined:hover {
   }
   .tagline {
     font-size: 10px;
-  }
- 
-  .current-events {
-    height: 70px;
-  }
-
-  .bottom-logo-container img {
-    width: 70px;
-    position: relative;
-    right: 20px;
-    top: 15px;
   }
   }
 
