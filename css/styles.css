@@ -42,7 +42,7 @@ footer {
 /* header */
 
 header {
-  background-color: #2D6A4F;
+  background-color: #B7E4C7;;
   grid-area: header;
 }
 
@@ -51,7 +51,7 @@ h1 {
   justify-content: center;
   font-size: 40px;
   padding-bottom: 10px;
-  color: #D8F3DC;
+  color: black;
   font-family: capriola, shippori antique, commissioner;
 }
 
@@ -101,33 +101,26 @@ body#homepage {
 section.about, section.mission {
   display: flex;
   flex-wrap: wrap;
-  margin: 2%;
   font-family: shippori antique, commissioner, capriola;
 }
 
-/* plant image */
-.home-plant {
-  flex: 0 0 auto; /* Make the image container not flexible */
-  margin: 10px; /* Adjust margin as needed */
-  padding: 30px;
-  max-width: 100%; /* Ensures the image does not exceed the width of its container */
-  height: auto;
-}
+/* this is now the about section */
 .mission {
   position: relative;
   width: 100%;
   height: 700px;
+  margin-top: 10px;
 }
 .mission-statement {
   margin-top: 70px;
+  margin-left: 70px;
+  margin-right: 70px;
   position: absolute;
   border: solid;
   background-color:#F5FCF780;
-
-}
-
-.about-paragraph p {
-  font-size: 18px
+  padding-left: 20px;
+  padding-right:20px;
+  border-radius: 40px;
 }
 .mission img.hero {
   border-radius: 5px 5px 0 0;
@@ -137,11 +130,8 @@ section.about, section.mission {
   height: 100%;
   filter:blur(5px)
 }
-.mission-statement {
-  padding-left: 20px;
-  padding-right:20px;
-  border-radius: 40px;
-  
+.mission-statement h3 {
+  font-size: 50px;
 }
 .mission-statement p {
   font-size: 25px;
@@ -151,41 +141,14 @@ section.about, section.mission {
 .mission-statement h3, .mission-statement p {
   text-align: center;
 }
-.mission-statement h3 {
-  font-size: 35px;
-}
+
 h3 {
   color: #1B4332;
   font-family: capriola, shippori antique, commissioner;
 }
-.about h4 {
-  font-size: 20px;
-  text-decoration: underline;
-}
-/*Donate Section */
-section.donations {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 2%;
-  font-family: shippori antique, commissioner, capriola;
-}
-.donations img {
-  float: right;
-}
+
 figcaption {
   display: none;
-}
-.event {
-  justify-content: flex-end;
-}
-
-.clothes-line {
-  flex: 0 0 auto; /* Make the image container not flexible */
-  margin: 5px; /* Adjust margin as needed */
-  max-width: 100%; /* Ensures the image does not exceed the width of its container */
-  height: auto;
-  justify-content: flex-start;
-  
 }
 
 /* Upcoming Events aside */
@@ -298,21 +261,9 @@ footer {
 
 /* Tablet */
 @media (width <=768px) {
-    .container {
-      grid-template-columns: 1fr;
-      grid-template-areas:
-      "header"
-      "tagline"
-      "pre-main"
-      "main"
-      "event"
-      "aside"
-      "footer"
-  }
     header {
       height: 110px;
   }
-  
     #myLinks {
       display: none;
   }
@@ -357,7 +308,7 @@ nav a i.material-symbols-outlined:hover {
 }
   h1 {
     padding-bottom: 0;
-  }
+  } 
 
   .about, .tagline, .donations {
     display: flex;
@@ -367,10 +318,6 @@ nav a i.material-symbols-outlined:hover {
     font-size: 10px
   }
  
-  .home-plant img {
-    height:250px;
-  }
-
   .current-events {
     height: 70px;
   }
