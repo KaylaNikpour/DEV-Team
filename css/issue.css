@@ -128,13 +128,24 @@ li {
   }
 
   button.accordion {
-    display: flex;
-    justify-content: center;
+    
     font-size: 2em;
     font-family: "capriola", commissioner, shippori antique;
     font-weight: bold;
   }
-
+  .material-symbols-outlined {
+    position: relative;
+    float: right;
+  }
+  .material-symbols-outlined:after {
+    content: '\e5cf';
+    font-size: 40px;
+    color: white;
+  }
+  .material-symbols-outlined:hover {
+    background-color:#B7E4C7;
+    border-radius: 60px;
+  }
 .fast-fashion img {
   width: 200px;
   height: auto;
