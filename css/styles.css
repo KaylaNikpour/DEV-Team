@@ -46,6 +46,7 @@ header {
   grid-area: header;
 }
 header img {
+padding-top: 20px;
 padding-left:45%;
 width: 200px;
 }
@@ -261,6 +262,7 @@ footer {
   }
   header img {
     width: 140px;
+    padding-top:5px;
   }
     #myLinks {
       display: none;
