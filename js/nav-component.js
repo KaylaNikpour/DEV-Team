@@ -11,7 +11,7 @@ class Nav extends HTMLElement {
         nav {
           border-bottom-left-radius: 10px;
           border-bottom-right-radius: 10px;
-          background: #2d6a4f;
+          background: #B7E4C7;;
           padding-bottom: 0.015rem;
           position: relative;
         }
@@ -26,10 +26,10 @@ class Nav extends HTMLElement {
         nav ul li a {
           border: 2px solid #1b4332;
           border-radius: 30px;
-          color: #b7e4c7;
+          color: black;
           display: block;
           font-family: capriola, shippori antique, commissioner;
-          font-size:20px;
+          font-size:25px;
           margin: 5px;
           padding: 10px 15px;
           text-align: center;
@@ -42,7 +42,7 @@ class Nav extends HTMLElement {
 
         nav ul li a.current {
           background-color: transparent;
-          border-color: #d8f3dc;
+          border-color: white;
         }
 
         .hamburger {
@@ -59,7 +59,7 @@ class Nav extends HTMLElement {
             'opsz' 24;
           font-size: 45px;
           font-style: normal;
-          color: #d8f3dc;
+          color: black;
         }
 
         @media (max-width: 800px) {
