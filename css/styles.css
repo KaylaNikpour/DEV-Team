@@ -120,6 +120,7 @@ section.about, section.mission {
   background-color:#F5FCF780;
   padding-left: 20px;
   padding-right:20px;
+  padding-bottom: 20px;
   border-radius: 40px;
 }
 .mission img.hero {
@@ -145,8 +146,37 @@ section.about, section.mission {
 h3 {
   color: #1B4332;
   font-family: capriola, shippori antique, commissioner;
+  font-size: 40px;
 }
-
+h4 {
+  font-family: capriola, shippori antique, commissioner;
+  font-size: 25px;
+  color: #2D6A4F;
+}
+.about {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.about p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.about ul {
+  font-size: 20px;
+}
+.about li a {
+  text-decoration: none;
+  color: #2D6A4F;
+}
+.about li a:hover {
+  color: blue;
+}
+.sadt, .more {
+  margin-bottom: 70px;
+}
+.evt-class {
+  color: #2D6A4F;
+}
 figcaption {
   display: none;
 }
@@ -162,10 +192,15 @@ figcaption {
 }
 .current-events h3 {
   text-align: center;
+  font-size: 30px;
 }
-.event-list li {
+.event-list li{
   list-style-type: none;
-  align-content: center;
+  text-align: center;
+  font-size: 30px;
+}
+.event-list li a {
+  text-decoration: none;
 }
 }
 /* Footer */
@@ -244,11 +279,14 @@ footer {
   }
   .about h4 {
     font-size: 20px;
-    text-decoration: underline;
+
     padding-top: 15px
 
   }
 
+}
+@media (width <=950px) {
+ 
 }
 @media (width <=878px) {
   #myLinks li.nav {
