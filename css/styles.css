@@ -15,14 +15,6 @@ body {
   grid-area: main;
 }
 
-.current-events {
-  grid-area: aside;
-}
-
-.donations {
-  grid-area: event;
-}
-
 footer {
   grid-area: footer;
 }
@@ -37,8 +29,6 @@ footer {
     "tagline tagline tagline tagline"
     "pre-main pre-main pre-main pre-main"
     "main main main main"
-    "event event event event"
-    "aside aside aside aside"
     "footer footer footer footer";
 }
 
@@ -147,6 +137,7 @@ h3 {
   font-size: 25px;
   color: #2D6A4F;
 }
+
 .about {
   margin-left: 30px;
   margin-right: 30px;
@@ -170,6 +161,14 @@ h3 {
 }
 .evt-class {
   color: #2D6A4F;
+}
+.creek img {
+  height: auto;
+  width: 40%;
+  float: right;
+  border-radius: 100%;
+  border: solid;
+  
 }
 
 /* Contact us */
@@ -216,6 +215,46 @@ footer {
   bottom:0;
   color: #2D6A4F;
 }
+.footer-container {
+  background-color: #B7E4C7;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  padding-top: 20px;
+  gap: 30px;
+  color: black;
+}
+
+.contact {
+  grid-column: 2/3;
+  text-align: center;
+}
+
+.social {
+  grid-column: 3/4;
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+  grid-column: 2/4;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.copyright p {
+  margin: 0px 10px;
+}
+
+.icon {
+  height: 50px;
+  margin: 0px 100px;
+}
+
+.footer-container h3 {
+  font-size: 24px;;
+}
 
 @media (width <=1050px) {
   .container {
@@ -225,8 +264,6 @@ footer {
     "tagline"
     "pre-main"
     "main"
-    "event"
-    "aside"
     "footer";
 }
   #myLinks li.nav {
@@ -305,48 +342,7 @@ nav a i.material-symbols-outlined:hover {
   .tagline {
     font-size: 10px;
   }
-  }
-
-  .footer-container {
-    background-color: #B7E4C7;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    padding-top: 20px;
-    gap: 30px;
-    color: black;
-}
-
-.contact {
-    grid-column: 2/3;
-    text-align: center;
-}
-
-.social {
-    grid-column: 3/4;
-    text-align: center;
-}
-
-.copyright {
-    text-align: center;
-    grid-column: 2/4;
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-
-.copyright p {
-    margin: 0px 10px;
-}
-
-.icon {
-    height: 50px;
-    margin: 0px 100px;
-}
-
-.footer-container h3 {
-    font-size: 24px;;
-}
+} 
 
 @media screen and (max-width: 600px) {
     .footer-container {
