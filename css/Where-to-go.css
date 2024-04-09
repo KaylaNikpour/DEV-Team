@@ -47,11 +47,6 @@ li {
     padding: 10%;
 }
 
-
-.tagline {
-    grid-area: tagline;
-}
-
 .Main_Wheretogo {
     grid-area: main;
 }
@@ -63,7 +58,7 @@ li {
     grid-area: local;
 }
 
-.Local_Classified {
+.Local_Classifieds {
     grid-area: classified;
 }
 
@@ -76,7 +71,6 @@ li {
 }
 
 
-
 .container {
     background-color: #F5FCF7;
     display: grid;
@@ -84,7 +78,6 @@ li {
     grid-template-rows: auto;
     grid-template-areas:
     "header header header header"
-    "tagline tagline tagline tagline"
     "main main main main"
     "charity local classified ."
     "other other other other"
