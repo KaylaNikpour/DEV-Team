@@ -111,7 +111,7 @@ text-align: center;
 
  iframe {
     aspect-ratio: 16 / 9;
-    width: 100%;
+    width: 50%;
 }
 
 /* Footer */
@@ -184,10 +184,14 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 50px;
+        margin: 50px;;
     }
 
     .youtubeOne iframe {
         margin: 50px;
+    }
+    
+    iframe {
+        width: 100%;
     }
 }
