@@ -198,14 +198,11 @@ footer {
   position: relative;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: solid;
-  border-color: black;
   font-family: shippori antique, commissioner, capriola;
   margin-top: 10px;
   padding-left: 10px;
   background-color: #2D6A4F;
   color: #B7E4C7; /* other colour choice background-color: #A2D5BC; */
-  border-radius: 20px;
 }
 
 #copyright {
@@ -308,3 +305,60 @@ nav a i.material-symbols-outlined:hover {
     font-size: 10px;
   }
   }
+
+  .footer-container {
+    background-color: #B7E4C7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding-top: 20px;
+    gap: 30px;
+    color: black;
+}
+
+.contact {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.social {
+    grid-column: 3/4;
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    grid-column: 2/4;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.copyright p {
+    margin: 0px 10px;
+}
+
+.icon {
+    height: 50px;
+    margin: 0px 100px;
+}
+
+.footer-container h3 {
+    font-size: 24px;;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .upcyclingContainer {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}

@@ -41,6 +41,7 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin: 20px;
 }
 
 .picture1 {
@@ -114,6 +115,10 @@ h2 {
 
 .footer-container h3 {
     font-size: 24px;;
+}
+
+footer {
+    margin-top: 100px;
 }
 
 @media screen and (max-width: 600px) {
