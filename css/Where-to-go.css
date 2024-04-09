@@ -15,16 +15,6 @@ li {
     font-size: 1.5em;
 }
 
-
-.main-where-to-go {
-    display: block;
-    grid-column-start: auto;
-    grid-column-end: auto;
-    text-align: center;
-    margin: 0 auto;
-    padding: 10%;
-}
-
 .charity-thrift-stores {
     grid-column-start: auto;
     grid-column-end: auto;
@@ -45,10 +35,6 @@ li {
 
 .other {
     padding: 10%;
-}
-
-.main-where-to-go {
-    grid-area: main;
 }
 
 .charity-thrift-stores {
@@ -78,15 +64,9 @@ li {
     grid-template-rows: auto;
     grid-template-areas:
     "header header header header"
-    "main main main main"
     "charity local classified ."
     "other other other other"
     "footer footer footer footer";
-}
-
-.main-where-to-go img {
-    width: 200px;
-    height: auto;
 }
 
 ul {
@@ -124,3 +104,17 @@ p a:hover {
 background-color: #2D6A4F; /* 마우스를 가져다 대면 색상 변경 */
     color: white;
 }
+
+@media (width <= 1231px) {
+    .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "charity"
+    "local"
+    "classified"
+    "other"
+    "footer";
+}
+}
+
