@@ -1,6 +1,10 @@
 body {
     background-color: #F5FCF7;
+    font-family: capriola, shippori antique, commissioner;
+    box-sizing: border-box;
 }
+
+/* Main */
 
 .upcyclingContainer {
     display: grid;
@@ -27,7 +31,7 @@ h2 {
     grid-column: 2/3;
     grid-row: 1/2;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -48,7 +52,7 @@ h2 {
     grid-column: 1/2;
     grid-row: 2/3;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     
 }
@@ -59,6 +63,47 @@ h2 {
     justify-content: center;
 }
 
-.upcyclingContainer img {
-    border: solid 2px black;
+/* Footer */
+
+
+.footer-container {
+    background-color: #B7E4C7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding-top: 20px;
+    gap: 30px;
+    color: black;
 }
+
+.contact {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.social {
+    grid-column: 3/4;
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    grid-column: 2/4;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.copyright p {
+    margin: 0px 10px;
+}
+
+.icon {
+    height: 50px;
+    margin: 0px 100px;
+}
+
+.footer-container h3 {
+    font-size: 24px;;
+}
+
