@@ -6,7 +6,7 @@ h3 {
 }
 
 p {
-    font-family: capriola, shippori antique, commissioner;
+    font-family: shippori antique, capriola, commissioner;
     font-size: 1.5em;
 }
 
@@ -15,28 +15,20 @@ li {
     font-size: 1.5em;
 }
 
-.Main_Wheretogo {
-    display: block;
-    grid-column-start: auto;
-    grid-column-end: auto;
-    text-align: center;
-    margin: 0 auto;
-    padding: 10%;
-}
 
-.Charity_thrift_stores {
+.charity-thrift-stores {
     grid-column-start: auto;
     grid-column-end: auto;
     text-align: center;
 }
 
-.Local_Markets {
+.local-markets {
     grid-column-start: auto;
     grid-column-end: auto;
     text-align: center;
 }
 
-.Local_Classified {
+.local-classifieds {
     grid-column-start: auto;
     grid-column-end: auto;
     text-align: center;
@@ -46,18 +38,14 @@ li {
     padding: 10%;
 }
 
-.Main_Wheretogo {
-    grid-area: main;
-}
-
-.Charity_thrift_stores {
+.charity-thrift-stores {
     grid-area: charity;
 }
-.Local_Markets {
+.local-markets {
     grid-area: local;
 }
 
-.Local_Classifieds {
+.local-classifieds {
     grid-area: classified;
 }
 
@@ -77,15 +65,9 @@ li {
     grid-template-rows: auto;
     grid-template-areas:
     "header header header header"
-    "main main main main"
     "charity local classified ."
     "other other other other"
     "footer footer footer footer";
-}
-
-.Main_Wheretogo img {
-    width: 200px;
-    height: auto;
 }
 
 ul {
@@ -93,7 +75,7 @@ ul {
 }
 
 ul li a {
-    text-decoration: none; /* 링크에 밑줄 제거 */
+     /* 링크에 밑줄 제거 */
     color: #1B4332; /* 링크의 기본 색상 설정 */
     transition: color 0.3s; /* 색상 변화에 대한 전환 효과 추가 */
     transition: background-color 0.3s, color 0.3s, padding 0.3s; /* 색상과 패딩에 대한 전환 효과 추가 */
@@ -109,7 +91,8 @@ ul li a:hover {
 
 p a {
     font-size: 1.3em;
-    text-decoration: none; /* 링크에 밑줄 제거 */
+    font-family: capriola, shippori antique, commissioner;
+    text-decoration: underline; /* 링크에 밑줄 제거 */
     color: #1B4332; /* 링크의 기본 색상 설정 */
     transition: color 0.3s; /* 색상 변화에 대한 전환 효과 추가 */
     transition: background-color 0.3s, color 0.3s, padding 0.3s; /* 색상과 패딩에 대한 전환 효과 추가 */
@@ -122,3 +105,17 @@ p a:hover {
 background-color: #2D6A4F; /* 마우스를 가져다 대면 색상 변경 */
     color: white;
 }
+
+@media (width <= 1231px) {
+    .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "charity"
+    "local"
+    "classified"
+    "other"
+    "footer";
+}
+}
+

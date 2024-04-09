@@ -33,7 +33,6 @@
     grid-template-rows: auto;
     grid-template-areas: 
       "header header header header"
-      
       "main main main main"
       "water water water water"
       "waste waste waste waste"
@@ -76,7 +75,7 @@ h4 {
 }
 
 p {
-    font-family: capriola, shippori antique, commissioner;
+    font-family: shippori antique, capriola, commissioner;
     font-size: 1.3em;
 }
 
@@ -87,10 +86,12 @@ mark {
 }
 
 li {
-  font-family: capriola, shippori antique, commissioner;
+  font-family: shippori antique, capriola, commissioner;
   font-size: 1.2em;
 }
-
+a {
+  color:#1B4332
+}
 
 #accordion {
   display: flex;
@@ -153,6 +154,9 @@ li {
 }
 footer {
   background-color: #B7E4C7;
+}
+footer p {
+  font-family: shippori antique, capriola, commisioner;
 }
 #copyright {
   color: black;

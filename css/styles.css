@@ -125,7 +125,7 @@ section.about, section.mission {
   height: 100%;
   filter:blur(5px)
 }
-.mission-statement h3 {
+.mission-statement h1 {
   font-size: 50px;
 }
 .mission-statement p {
@@ -133,16 +133,16 @@ section.about, section.mission {
   text-wrap: balance;
   font-weight: 600;
 }
-.mission-statement h3, .mission-statement p {
+.mission-statement h1, .mission-statement p {
   text-align: center;
 }
 
-h3 {
+h1, h2 {
   color: #1B4332;
   font-family: capriola, shippori antique, commissioner;
   font-size: 40px;
 }
-h4 {
+h3 {
   font-family: capriola, shippori antique, commissioner;
   font-size: 25px;
   color: #2D6A4F;
@@ -237,14 +237,14 @@ footer {
 }
 @media (width <=1000px){
 
-  .about h3, .about h4, .donations h3 {
+  .about h2, .about h3, .donations h3 {
     text-align: center;
   }
-  .about h3, .donations h3 {
+  .about h2, .donations h2 {
     font-size: 25px;
     padding-top: 30px;
   }
-  .about h4 {
+  .about h3 {
     font-size: 20px;
     padding-top: 15px;
 
@@ -297,9 +297,6 @@ nav a i.material-symbols-outlined:hover {
   background-color: #04AA6D;
   color: white;
 }
-  h1 {
-    padding-bottom: 0;
-  } 
 
   .about, .tagline, .donations {
     display: flex;
