@@ -6,7 +6,7 @@ h3 {
 }
 
 p {
-    font-family: capriola, shippori antique, commissioner;
+    font-family: shippori antique, capriola, commissioner;
     font-size: 1.5em;
 }
 
@@ -16,7 +16,7 @@ li {
 }
 
 
-.Main_Wheretogo {
+.main-where-to-go {
     display: block;
     grid-column-start: auto;
     grid-column-end: auto;
@@ -25,19 +25,19 @@ li {
     padding: 10%;
 }
 
-.Charity_thrift_stores {
+.charity-thrift-stores {
     grid-column-start: auto;
     grid-column-end: auto;
     text-align: center;
 }
 
-.Local_Markets {
+.local-markets {
     grid-column-start: auto;
     grid-column-end: auto;
     text-align: center;
 }
 
-.Local_Classified {
+.local-classifieds {
     grid-column-start: auto;
     grid-column-end: auto;
     text-align: center;
@@ -47,18 +47,18 @@ li {
     padding: 10%;
 }
 
-.Main_Wheretogo {
+.main-where-to-go {
     grid-area: main;
 }
 
-.Charity_thrift_stores {
+.charity-thrift-stores {
     grid-area: charity;
 }
-.Local_Markets {
+.local-markets {
     grid-area: local;
 }
 
-.Local_Classifieds {
+.local-classifieds {
     grid-area: classified;
 }
 
@@ -84,7 +84,7 @@ li {
     "footer footer footer footer";
 }
 
-.Main_Wheretogo img {
+.main-where-to-go img {
     width: 200px;
     height: auto;
 }
@@ -94,7 +94,7 @@ ul {
 }
 
 ul li a {
-    text-decoration: none; /* 링크에 밑줄 제거 */
+     /* 링크에 밑줄 제거 */
     color: #1B4332; /* 링크의 기본 색상 설정 */
     transition: color 0.3s; /* 색상 변화에 대한 전환 효과 추가 */
     transition: background-color 0.3s, color 0.3s, padding 0.3s; /* 색상과 패딩에 대한 전환 효과 추가 */
@@ -110,7 +110,8 @@ ul li a:hover {
 
 p a {
     font-size: 1.3em;
-    text-decoration: none; /* 링크에 밑줄 제거 */
+    font-family: capriola, shippori antique, commissioner;
+    text-decoration: underline; /* 링크에 밑줄 제거 */
     color: #1B4332; /* 링크의 기본 색상 설정 */
     transition: color 0.3s; /* 색상 변화에 대한 전환 효과 추가 */
     transition: background-color 0.3s, color 0.3s, padding 0.3s; /* 색상과 패딩에 대한 전환 효과 추가 */
