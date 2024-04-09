@@ -101,6 +101,7 @@ li {
     flex-wrap: wrap;
     margin-bottom: 30px;
     color: black;
+    grid-column: 1/5;
   }
   .accordion-container .accordion {
     background-color:  #1B4332;
@@ -155,4 +156,9 @@ footer {
 }
 #copyright {
   color: black;
+}
+
+.ordinalIcon {
+  display: flex;
+  justify-content: center;
 }

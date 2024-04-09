@@ -47,8 +47,13 @@ header {
 }
 header img {
 padding-top: 20px;
-padding-left:45%;
 width: 200px;
+height: auto;
+}
+
+.ordinalIcon {
+  display: flex;
+  justify-content: center;
 }
 
 /* nav bar */
@@ -257,21 +262,15 @@ footer {
 
 
 @media (width <=768px) {
-    header {
-      height: 110px;
-  }
+
   header img {
     width: 140px;
+    height: auto;
     padding-top:5px;
   }
     #myLinks {
       display: none;
   }
-    .top-logo-container img {
-     width: 70px;
-     position: absolute;
-     top: 18px;
-  }   
   
    nav a i.material-symbols-outlined {
     display: flex;
@@ -309,4 +308,3 @@ nav a i.material-symbols-outlined:hover {
     font-size: 10px;
   }
   }
-

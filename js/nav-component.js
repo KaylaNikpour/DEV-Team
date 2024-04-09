@@ -38,6 +38,7 @@ class Nav extends HTMLElement {
 
         nav ul li a:hover {
           background-color: #1b4332;
+          color: white;
         }
 
         nav ul li a.current {
