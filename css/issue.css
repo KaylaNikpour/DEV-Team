@@ -89,7 +89,9 @@ li {
   font-family: shippori antique, capriola, commissioner;
   font-size: 1.2em;
 }
-
+a {
+  color:#1B4332
+}
 
 #accordion {
   display: flex;
