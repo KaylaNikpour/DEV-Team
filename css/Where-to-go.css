@@ -20,20 +20,51 @@ li {
     grid-column-start: auto;
     grid-column-end: auto;
     text-align: center;
+    background-image: url(/assets/store.jpg);
+    background-size: contain;
+    background-color: rgba(69,69,69,0.5);
+    background-blend-mode: multiply;
+    border: solid 1px #F5FCF7;
+    border-radius: 20px;
+    margin-top: 10px;
+    
+}
+
+.charity-thrift-stores h3, .local-markets h3, .local-classifieds h3 {
+    color: white;
+}
+
+.charity-thrift-stores a, .local-markets a, .local-classifieds a {
+    color: white;
 }
 
 .local-markets {
     grid-column-start: auto;
     grid-column-end: auto;
     text-align: center;
+    background-image: url(/assets/market.jpg);
+    background-size: contain;
+    background-color: rgba(69,69,69,0.5);
+    background-blend-mode: multiply;
+    border: solid 1px #F5FCF7;
+    border-radius: 20px;
+    margin-top: 10px;
+    
 }
 
 .local-classifieds {
     grid-column-start: auto;
     grid-column-end: auto;
     text-align: center;
+    background-image: url(/assets/local.jpg);
+    background-size: contain;
+    background-color: rgba(69,69,69,0.5);
+    background-blend-mode: multiply;
+    border: solid 1px #F5FCF7;
+    border-radius: 20px;
+    margin-top: 10px;
+    
 }
-
 .other {
     padding: 10%;
 }

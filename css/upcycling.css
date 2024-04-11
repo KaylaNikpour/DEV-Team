@@ -42,6 +42,8 @@ h2 {
     height: 100%;
     object-fit: cover;
     margin: 20px;
+    border-radius: 20px;
+
 }
 
 .picture1 {
@@ -55,6 +57,8 @@ h2 {
     font-size: 18px;
     margin: 50px;
     min-width: 280px;
+    border-radius: 20px;
+
 }
 
 

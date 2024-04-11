@@ -148,10 +148,20 @@ a {
     background-color:#B7E4C7;
     border-radius: 60px;
   }
-.fast-fashion img {
-  width: 200px;
-  height: auto;
+
+.img1, .img2, .img3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.img1 img, .img2 img, .img3 img {
+  width: 1000px;
+  height: auto;
+  border-radius: 300px;
+  border: solid black 3px;
+}
+
 footer {
   background-color: #B7E4C7;
 }
@@ -165,4 +175,16 @@ footer p {
 .ordinalIcon {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .img2 img, .img1 img, .img3 img {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .img2 img, .img1 img, .img3 img {
+    width: 400px;
+  }
 }
