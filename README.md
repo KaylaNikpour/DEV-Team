@@ -15,7 +15,6 @@ Team, timelines, tasks, and deliverables are managed with [Notion](https://www.n
 
 ### IDD 💻
 1. Brody Richards
-1. Jashanjeet Singh (Jerry)
 1. Kayla Nikpour
 1. Sueun Choi (Chloe)
 
