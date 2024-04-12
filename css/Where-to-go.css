@@ -193,6 +193,7 @@ background-color: #2D6A4F; /* 마우스를 가져다 대면 색상 변경 */
     }
     .panel li {
       margin-top: 10px;
+      word-wrap: break-word
     }
   
     button.accordion {
