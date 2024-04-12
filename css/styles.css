@@ -116,7 +116,6 @@ section.about, section.mission {
   font-size: 50px;
 }
 .mission-statement p {
-
   text-wrap: balance;
   font-weight: 600;
 }
@@ -370,7 +369,6 @@ nav a i.material-symbols-outlined:hover {
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: #04AA6D;
   color: white;
 }
 

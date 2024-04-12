@@ -84,6 +84,10 @@ li {
     grid-area: other;
 }
 
+.accordion {
+    grid-area: accordion;
+}
+
 .footer {
     grid-area: footer;
 }
@@ -98,6 +102,7 @@ li {
     "header header header header"
     "charity local classified ."
     "other other other other"
+    "accordion accordion accordion accordion"
     "footer footer footer footer";
 }
 
@@ -146,7 +151,71 @@ background-color: #2D6A4F; /* 마우스를 가져다 대면 색상 변경 */
     "local"
     "classified"
     "other"
+    "accordion"
     "footer";
 }
 }
+
+/* accordion */
+
+#accordion {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .accordion-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      color: black;
+      grid-column: 1/5;
+    }
+    .accordion-container .accordion {
+      background-color:  #1B4332;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      border: solid;
+      text-align: left;
+      outline: none;
+      transition: 0.6s;
+      border-radius: 20px;
+    }
+    .panel {
+      padding:0 30px;
+      background-color: #D8F3DC;
+      max-height: 0;
+      width: 100%;
+      overflow:hidden;
+      transition: max-height 0.4s ease-out;
+      border-radius: 20px;
+      font-family: "shippori antique", commissioner, capriola;
+      font-size: 1rem;
+    }
+    .panel li {
+      margin-top: 10px;
+    }
+  
+    button.accordion {
+      
+      font-size: 2em;
+      font-family: "capriola", commissioner, shippori antique;
+      font-weight: bold;
+    }
+    .material-symbols-outlined {
+      position: relative;
+      float: right;
+    }
+    .material-symbols-outlined:after {
+      content: '\e5cf';
+      font-size: 40px;
+      color: white;
+    }
+    .material-symbols-outlined:hover {
+      background-color:#B7E4C7;
+      border-radius: 60px;
+    }
+
+    li {
+        font-size: 1.2em;
+    }
 
