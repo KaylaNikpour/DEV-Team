@@ -43,7 +43,10 @@ h2 {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+}
 
+.upcyclingContainer .box1 {
+    margin: 15px;
 }
 
 .picture1 {
